@@ -9,6 +9,7 @@ gem 'pg'
 group :test, :development do
   gem 'pry'
   gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-collection_matchers'
 end
 
 # Use SCSS for stylesheets
