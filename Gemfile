@@ -29,6 +29,8 @@ gem 'activeadmin', github: 'activeadmin'
 # Device authentication
 gem 'devise'
 
+gem 'rouge'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

@@ -146,6 +146,7 @@ GEM
       json (~> 1.4)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
+    rouge (1.10.1)
     rspec-collection_matchers (1.1.2)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.3.2)
@@ -216,6 +217,7 @@ DEPENDENCIES
   pg
   pry
   rails (= 4.0.1)
+  rouge
   rspec-collection_matchers
   rspec-rails (~> 3.0)
   sass-rails (~> 4.0.0)
