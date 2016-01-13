@@ -24,10 +24,11 @@ feature 'Writing blog posts' do
 
     fill_in 'post_title', :with => 'New Blog Post'
     fill_in 'post_body', :with => "[Example.com link](http://example.com/)"
+    check 'post_published'
     click_button 'Create Post'
 
     visit post_path(Post.last)
 
-    page.should have_link 'Example.com link'
+    expect(page).to have_link 'Example.com link'
   end
 end

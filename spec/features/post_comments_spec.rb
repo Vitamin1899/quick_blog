@@ -1,8 +1,9 @@
 require 'spec_helper'
+require 'rails_helper'
 
 feature 'Posting Comments' do
   background do
-    @post = Post.create(:title => 'Awesome Blog Post', :body => 'Lorem ipsum dolor sit amet')
+    @post = Post.create(:title => 'Awesome Blog Post', :body => 'Lorem ipsum dolor sit amet', :published => true)
   end
 
   # Note this scenario doesn't test the AJAX comment posting.
