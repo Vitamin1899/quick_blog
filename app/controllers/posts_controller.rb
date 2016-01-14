@@ -24,4 +24,9 @@ class PostsController < ApplicationController
     end
   end
 
+  private
+    def post_params
+      params.require(:post).permit(:body, :title, :published, :author, :author_id)
+    end
+
 end
