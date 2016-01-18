@@ -11,6 +11,10 @@ QuickBlog::Application.routes.draw do
 
   get '/about', :to => 'pages#about'
 
+  match '/404', :to => 'errors#not_found'
+  match '/500', :to => 'errors#internal_error'
+  match '/422', :to => 'errors#unprocessable_entity'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
